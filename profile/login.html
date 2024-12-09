@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/login.css">
+  <title>로그인</title>
+</head>
+<body>
+  <div class="container">
+    <div class="join__wrapper">
+      <div class="logo__wrapper">
+        <h1><a href="./index.html">LOGO</a></h1>
+      </div>
+      <form action="" class="form__wrapper">
+        <input type="text" placeholder="아이디를 입력하세요" id="idTxt">
+        <div class="error" id="error__id"></div>
+        <input type="password" placeholder="비밀번호를 입력하세요"  id="passwordTxt">
+        <div class="error" id="error__pw"></div>
+        <div class="easyLogin__wrapper">
+          <input type="checkbox" name="간편로그인" id="easyLogin">
+          <span>간편로그인</span>
+        </div>  
+        <div class="loginBtn__wrapper">
+          <button onclick="login()" type="button">로그인</button>
+        </div>
+        <div class="btn__wrapper">
+          <div class="joinBtn">
+            <span><a href="./join.html">회원가입</a></span>
+          </div>
+          <div class="searchBtn">
+            <span><a href="#">아이디 찾기</a></span>
+            <span><a href="#">비밀번호 찾기</a></span>
+          </div>
+        </div>
+        </div>
+      </form>
+      <div class="banner__wrapper">
+        <img src="./img/banner.png" alt="">
+      </div>
+    </div>
+  </div>
+  <script src="./js/index.js"></script>
+</body>
+</html>

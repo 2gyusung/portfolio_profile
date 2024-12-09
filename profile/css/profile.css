@@ -1,0 +1,384 @@
+@import url("https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gowun Batang", serif;
+  scroll-behavior: smooth;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+}
+.menu_wrapper {
+  display: flex;
+  flex-direction: column;
+}
+/* menu */
+.navMenu ul {
+  display: flex;
+}
+.navMenu ul li {
+  list-style: none;
+}
+.navMenu ul li a {
+  width: 100%;
+  text-decoration: none;
+  margin: 0 40px;
+  line-height: 50px;
+  font-weight: bold;
+  color: black;
+}
+.navMenu li a:hover {
+  transition: 2s;
+  color: #024caa;
+  font-weight: bold;
+}
+/* menu submenu */
+.navMenu > ul > li {
+  height: 38px;
+}
+.navMenu > ul > li > ul {
+  display: flex;
+  flex-direction: column;
+  transition: ease 3s;
+}
+.navMenu > ul > li > ul > li > a {
+  margin: 0 auto;
+  padding: 8px;
+  text-align: center;
+  display: none;
+  transition: 5s;
+}
+.navMenu > ul > li:hover > ul > li > a {
+  margin: 0 auto;
+  padding: 8px;
+  text-align: center;
+  display: block;
+}
+
+.sideMenu_wrapper ul {
+  margin: 25px 105px;
+  display: flex;
+  justify-content: flex-end;
+}
+.sideMenu_wrapper ul li {
+  list-style: none;
+}
+.sideMenu_wrapper ul li a {
+  text-decoration: none;
+  color: #817c7c;
+  margin: 20px;
+  font-size: 16px;
+  font-weight: bold;
+}
+.sideMenu_wrapper ul li a:hover {
+  text-decoration: underline;
+  color: #383232;
+  transition: 2s;
+}
+/*  profile*/
+.content__wrapper {
+  margin: 150px 0;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile__img img {
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  padding: 30px;
+  background-position: center;
+  background-size: cover;
+}
+
+.profile__wrapper {
+  /* width: 60%; 질문 */
+  display: flex;
+  justify-content: space-evenly;
+}
+.profile__intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.name__wrapper span:first-child {
+  color: #b7b7b7;
+  font-size: 20px;
+}
+.profile__intro .name__wrapper {
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+}
+.name__wrapper span .hand {
+  font-size: 26px;
+  padding: 10px;
+}
+.dev__wrapper {
+  font-weight: bold;
+  font-size: 32px;
+  color: #222831;
+}
+.info_btn button {
+  margin: 15px;
+  border: none;
+  padding: 15px;
+  border-radius: 20px;
+}
+.info_btn button a {
+  color: black;
+  text-decoration: none;
+  font-size: 16px;
+}
+.info_icon {
+  display: flex;
+}
+.info_icon a {
+  margin: 15px;
+  font-size: 30px;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+}
+.expBox {
+  height: 1000px;
+}
+.experience_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+}
+.experience_title_wrapper {
+  margin: 100px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.experience-details-container-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.experience_title_wrapper h1:nth-child(1) {
+  font-size: 20px;
+  color: rgb(85, 85, 85);
+}
+.experience_title_wrapper h1:nth-child(2) {
+  font-size: 32px;
+  font-weight: bold;
+}
+.aboutText_container {
+  /*해결 해야 함*/
+  width: 70%;
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+}
+.experience-details-container {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.experience-details-container h2 {
+  text-align: center;
+  margin: 15px;
+}
+.aboutTitle {
+  margin: 0 8px;
+}
+.aboutBox {
+  width: 100%;
+  height: 1000px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+.exp_wrapper {
+  margin: 20px;
+  width: 650px;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1.5rem;
+  background: white;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  text-align: center;
+  border-color: rgb(163, 163, 163);
+  background: rgb(250, 250, 250);
+}
+
+.exp_wrapper article {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+}
+
+.icon {
+  height: 2rem;
+}
+/* Projects */
+.projectBox {
+  height: 1000px;
+}
+.experience-details-container {
+}
+.expProjects_container {
+  display: flex;
+  justify-content: center;
+}
+.expProjects_wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 3.5rem;
+  width: 350px;
+}
+.article_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.img_container {
+  overflow: hidden;
+  border-radius: 2rem;
+}
+.img_container img {
+  border-radius: 2rem;
+  width: 300px;
+  height: 300px;
+  transition: 3s;
+}
+.img_container img:hover {
+  transform: scale(1.5);
+}
+.projects_title {
+  margin: 25px;
+}
+.projectBtn_wrapper {
+  margin: 15px;
+}
+.projectBtn_wrapper a {
+  border: 1px solid rgb(163, 163, 163);
+  color: black;
+  margin: 15px;
+  font-weight: 600;
+  transition: all 300ms ease;
+  padding: 1rem;
+  width: 8rem;
+  border-radius: 2rem;
+  text-decoration: none;
+}
+.projectBtn_wrapper a:hover {
+  border: 1px solid rgb(163, 163, 163);
+  background: rgb(53, 53, 53);
+  /* color: rgb(218, 217, 217); */
+  color: #eee;
+}
+/* contact me */
+.contactBox {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 1200px;
+  margin-top: 500px;
+}
+.contact_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.expProjects_wrapper i {
+  font-weight: bold;
+  line-height: 50px;
+  font-size: 28px;
+}
+.expProjects_wrapper span {
+  font-size: 20px;
+  line-height: 50px;
+}
+
+/* footer */
+footer {
+  margin-top: 150px;
+  width: 100%;
+  height: 300px;
+  background-color: #ccc;
+  padding: 80px 150px;
+}
+.footer_title_wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 100%;
+}
+.footer_content_wrapper {
+  margin: 0 auto;
+  width: 100%;
+}
+.footer_logo {
+  margin-left: 15px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.footer_nav ul {
+  display: flex;
+}
+.footer_nav ul li {
+  list-style: none;
+}
+
+.footer_nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 15px;
+}
+.footer_nav ul li a:hover {
+  text-decoration: underline;
+  transition: 0.3s;
+  opacity: 0.6;
+}
+.underline {
+  margin: 15px auto;
+  border: 1px solid;
+  color: #eee;
+  width: 100%;
+}
+.footer_conter_address {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+}
+.copyright {
+  font-size: 14px;
+  padding: 15px;
+  margin: 0 auto;
+  width: 100%;
+}
