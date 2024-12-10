@@ -5,16 +5,21 @@ body {
   font-family: "ROboto", sans-serif;
 }
 
+
 a:-webkit-any-link {
   color: #000;
   text-decoration: none;
 }
-
+.container {
+  overflow: visible; /* 자식 요소가 항상 보이도록 설정 */
+}
+/* header */
 .navbar {
   display: flex;
   align-items: center;
   padding: 8px 12px;
   justify-content: space-around;
+  z-index: 3;
 }
 
 .navbar__logo {
@@ -26,6 +31,8 @@ a:-webkit-any-link {
   display: flex;
   list-style: none;
   padding-left: 0;
+  position: relative; 
+  z-index: 1; 
 }
 .navbar__menu li {
   padding: 8px 12px;
@@ -50,7 +57,11 @@ a:-webkit-any-link {
   right: 35px;
   font-size: 24px;
   display: none;
+  border: none;
+  background: transparent;
 }
+
+
 
 @media screen and (max-width: 768px) {
   .navbar {
@@ -70,6 +81,7 @@ a:-webkit-any-link {
   .navbar__menu li {
     width: 100%;
     text-align: center;
+
   }
 
   .navbar__toggleBtn {
@@ -77,6 +89,11 @@ a:-webkit-any-link {
   }
 
   .navbar__menu.active {
-    display: flex;
+    display: block; 
   }
+}
+
+.contents {
+  position: relative; 
+  z-index: 2;
 }
