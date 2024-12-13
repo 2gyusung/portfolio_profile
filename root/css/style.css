@@ -90,13 +90,22 @@ a:-webkit-any-link {
 
   .navbar__menu.active {
     display: block; 
+    position: absolute;
+    width: 100%;
+    height: auto;
+    display: block; 
+    position: absolute;
+    top: 90px;
+    left: 0;
+    background-color: #ffff;
+    opacity: 0.5;
+    outline: 1px solid red;
   }
 }
 
 .contents {
   position: relative; 
-  z-index: 2;
-  height: 100vh;
+  z-index: -999;
 }
 
 
