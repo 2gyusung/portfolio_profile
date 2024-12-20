@@ -1,10 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
+* {
+  scroll-behavior: smooth;
+}
 body {
   margin: 0;
   font-family: "ROboto", sans-serif;
 }
-
 
 a:-webkit-any-link {
   color: #000;
@@ -31,8 +33,8 @@ a:-webkit-any-link {
   display: flex;
   list-style: none;
   padding-left: 0;
-  position: relative; 
-  z-index: 1; 
+  position: relative;
+  z-index: 1;
 }
 .navbar__menu li {
   padding: 8px 12px;
@@ -61,8 +63,6 @@ a:-webkit-any-link {
   background: transparent;
 }
 
-
-
 @media screen and (max-width: 768px) {
   .navbar {
     justify-content: space-between;
@@ -81,7 +81,6 @@ a:-webkit-any-link {
   .navbar__menu li {
     width: 100%;
     text-align: center;
-
   }
 
   .navbar__toggleBtn {
@@ -89,12 +88,10 @@ a:-webkit-any-link {
   }
 
   .navbar__menu.active {
-    display: block; 
     position: absolute;
     width: 100%;
     height: auto;
-    display: block; 
-    position: absolute;
+    display: block;
     top: 90px;
     left: 0;
     background-color: #ffff;
@@ -103,11 +100,10 @@ a:-webkit-any-link {
   }
 }
 
-.contents {
-  position: relative; 
+#contents {
+  position: relative;
   z-index: -999;
 }
-
 
 /*  profile*/
 .content__wrapper {
@@ -192,4 +188,49 @@ a:-webkit-any-link {
     margin: auto;
     display: block;
   }
+}
+
+/* about me */
+#aboutme__container {
+
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 0;
+}
+.experience_title_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.experience_subtitle_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.experience_subtitle_wrapper i {
+  font-size: 28px;
+  margin-right: 10px;
+}
+.experience_container {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.exp_wrapper {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  border-radius: 2rem;
+  padding: 1.5rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  background: rgb(250, 250, 250);
 }

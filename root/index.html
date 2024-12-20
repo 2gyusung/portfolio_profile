@@ -1,60 +1,116 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/style.css">
-  <link rel="stylesheet" href="./css/all.min.css">
-  <title>이규성 프로필 :: 자기소개</title>
-</head>
-<body>
-  <div class="container">
-    <header class="header">
-      <nav class="navbar">
-        <div class="navbar__logo">
-          <a href="#">GYUSUNG</a>
-        </div>
-        <ul class="navbar__menu">
-          <li><a href="#">HOME</a></li>
-          <li><a href="#">ABOUT ME</a></li>
-          <li><a href="#">EXPERIENCE </a></li>
-          <li><a href="#">PROJECTS</a></li>
-          <li><a href="#">CONTACT ME</a></li>
-        </ul>
-        <button class="navbar__toggleBtn">
-          <i class="fas fa-bars"></i>
-        </button>
-      </nav>
-    </header>
-    <div class="contents">
-      <div class="content__wrapper">
-        <div class="profile__wrapper">
-          <div class="profile__img">
-            <img src="./img/사진.jpg" alt="">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <title>이규성 프로필 :: 자기소개</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <nav class="navbar">
+          <div class="navbar__logo">
+            <a href="#">GYUSUNG</a>
           </div>
-          <div class="profile__intro">
-            <div class="name__wrapper">
-              <span>Hello , I'm <span class="hand">👋</span></span>
-              <br/>
-              <span>LEE GYUSUNG</span>
+          <ul class="navbar__menu">
+            <li><a href="">HOME</a></li>
+            <li><a href="#aboutme__container">ABOUT ME</a></li>
+            <li><a href="#">EXPERIENCE </a></li>
+            <li><a href="#">PROJECTS</a></li>
+            <li><a href="#">CONTACT ME</a></li>
+          </ul>
+          <button class="navbar__toggleBtn">
+            <i class="fas fa-bars"></i>
+          </button>
+        </nav>
+      </header>
+      <!-- main -->
+      <section id="contents">
+        <div class="content__wrapper">
+          <div class="profile__wrapper">
+            <div class="profile__img">
+              <img src="./img/사진.jpg" alt="" />
             </div>
-            <div class="dev__wrapper">
-              <span>Frontend Developer</span>
-            </div>
-            <div class="info_btn">
-              <button><a href="#">Download CV</a></button>
-              <button><a href="#contact">Contact Info</a></button>
-            </div>
-            <div class="info_icon">
-             <a class="fa-brands fa-github" href="https://github.com/2gyusung" target="_blank"></a>
-              <a class="fa-regular fa-file-pdf"></a>
-            </div>
+            <div class="profile__intro">
+              <div class="name__wrapper">
+                <span>Hello , I'm <span class="hand">👋</span></span>
+                <br />
+                <span>LEE GYUSUNG</span>
+              </div>
+              <div class="dev__wrapper">
+                <span>Frontend Developer</span>
+              </div>
+              <div class="info_btn">
+                <button><a href="#">Download CV</a></button>
+                <button><a href="#contact">Contact Info</a></button>
+              </div>
+              <div class="info_icon">
+                <a
+                  class="fa-brands fa-github"
+                  href="https://github.com/2gyusung"
+                  target="_blank"
+                ></a>
+                <a class="fa-regular fa-file-pdf"></a>
+              </div>
             </div>
           </div>
         </div>
-    </div>
-    <script src="./js/main.js"></script>
-    </div>
+      </section>
+      <!-- exp -->
+      <section id="aboutme__container">
+        <div class="experience_title_wrapper">
+          <h1>Get To Know More</h1>
+          <h1>About Me</h1>
+        </div>
+        <div class="experience_container">
+          <div class="experience-details-container">
+            <div class="experience_subtitle_wrapper">
+              <i class="fa-solid fa-clipboard-list aboutTitle"></i>
+              <h2>Experience</h2>
+            </div>
+            <div class="experience-details-container-wrapper">
+              <div class="exp_wrapper">
+                <article>
+                  <div class="exp_title">
+                    <span>대덕대학교(2년제) 컴퓨터공학과 졸업</span>
+                  </div>
+                </article>
+                <article>
+                  <div class="exp_title">
+                    <span>세잔직업전문학교 한번에 끝나는 프론트엔드 과정</span>
+                    <span>2024-08-05 ~ 2025-02-25(6개월) </span>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
 
-</body>
+          <div class="experience-details-container">
+            <div class="experience_subtitle_wrapper">
+              <i class="fa-solid fa-graduation-cap aboutTitle"></i>
+              <h2>Education</h2>
+            </div>
+            <div class="experience-details-container-wrapper">
+              <div class="exp_wrapper">
+                <article>
+                  <div class="exp_title">
+                    <span>대덕대학교(2년제) 컴퓨터공학과 졸업</span>
+                  </div>
+                </article>
+                <article>
+                  <div class="exp_title">
+                    <span>세잔직업전문학교 한번에 끝나는 프론트엔드 과정</span>
+                    <span>2024-08-05 ~ 2025-02-25(6개월) </span>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <script src="./js/main.js"></script>
+    </div>
+  </body>
 </html>
