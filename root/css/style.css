@@ -239,7 +239,8 @@ a:-webkit-any-link {
 
 .exp_wrapper {
   margin: 20px;
-  width: 550px;
+  width:auto;
+  height: auto;
   align-items: center;
   display: flex;
   flex-wrap: wrap;
@@ -262,7 +263,7 @@ a:-webkit-any-link {
   font-size: 24px;
   display: flex;
   align-items: center;
-  margin: 15px;
+  padding: 1rem;
 }
 
 
