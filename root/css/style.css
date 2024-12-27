@@ -212,30 +212,7 @@ a:-webkit-any-link {
   padding: 50px 120px;
   flex-wrap: wrap;
 }
-.experience_title_wrapper {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  font-size: 32px;
-  font-weight: bold;
-  margin: 3rem;
-}
-.experience_subtitle_wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.experience_subtitle_wrapper i {
-  font-size: 28px;
-  margin-right: 10px;
-}
-.experience_container {
-  width: 100%;
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  align-items: center;
-}
+
 
 .exp_wrapper {
   margin: 20px;
