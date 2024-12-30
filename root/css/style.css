@@ -205,21 +205,32 @@ a:-webkit-any-link {
   align-items: center;
   padding: 50px 0;
 }
-.aboutme_wrapper {
+.experience__title_wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 50px 120px;
+}
+.subTitle__wrapper {
+  display: flex;
+  align-items: center;
+
+}
+.subTitle__wrapper i {
+  line-height: 65px;
+  font-size: 24px;
+  margin-right: 1rem;
+}
+.experience__container {
   flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
 }
 
-
-.exp_wrapper {
-  margin: 20px;
-  width:auto;
-  height: auto;
+.details__wrapper {
+  margin: 15px;
   align-items: center;
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   padding: 1.5rem;
   background: white;
@@ -230,17 +241,17 @@ a:-webkit-any-link {
   border-color: rgb(163, 163, 163);
   background: rgb(250, 250, 250);
 }
+.tech__details__wrapper {
+  display: flex;
+  flex-direction: row;
+}
 
 .exp_wrapper article {
   display: flex;
   justify-content: center;
   padding: 15px;
-}
-.exp_wrapper article i {
-  font-size: 24px;
-  display: flex;
-  align-items: center;
-  padding: 1rem;
+  gap: 10px;
+  text-align: center;
 }
 
 
