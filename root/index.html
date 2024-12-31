@@ -137,36 +137,20 @@
         <p class="section__text__p1">Browse My Recent</p>
         <h1 class="title">Projects</h1>
         <div class="swiper mySwiper">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">
-        <img src="./img/img.jpg" />
-        <h1>테스트</h1>
-      </div>
-      <div class="swiper-slide">
-        <img src="./img/img.jpg" />
-      </div>
-      <div class="swiper-slide">
-        <img src="./img/img.jpg" />
-      </div>
-      <div class="swiper-slide">
-        <img src="./img/img.jpg" />
-      </div>
-      <div class="swiper-slide">
-        <img src="./img/img.jpg" />
-      </div>
-      <div class="swiper-slide">
-        <img src="./img/img.jpg" />
-      </div>
-      <div class="swiper-slide">
-        <img src="./img/img.jpg" />
-      </div>
-      <div class="swiper-slide">
-        <img src="./img/img.jpg" />
-      </div>
-      <div class="swiper-slide">
-        <img src="./img/img.jpg" />
-      </div>
-    </div>
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">Slide 1</div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+            <div class="swiper-slide">Slide 4</div>
+            <div class="swiper-slide">Slide 5</div>
+            <div class="swiper-slide">Slide 6</div>
+            <div class="swiper-slide">Slide 7</div>
+            <div class="swiper-slide">Slide 8</div>
+            <div class="swiper-slide">Slide 9</div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      
     <div class="swiper-pagination"></div>
   </div>
         <!-- <div class="experience-details-container">
@@ -243,45 +227,18 @@
         </div> -->
       </section>
       <section id="contact">
-        <p class="section__text__p1">Get in Touch</p>
-        <h1 class="title">Contact Me</h1>
-        <div class="contact-info-upper-container">
-          <div class="contact-info-container">
-            <img
-              src="./assets/email.png"
-              alt="Email icon"
-              class="icon contact-icon email-icon"
-            />
-            <p><a href="mailto:examplemail@gmail.com">Example@gmail.com</a></p>
-          </div>
-          <div class="contact-info-container">
-            <img
-              src="./assets/linkedin.png"
-              alt="LinkedIn icon"
-              class="icon contact-icon"
-            />
-            <p><a href="https://www.linkedin.com">LinkedIn</a></p>
-          </div>
-        </div>
+   
       </section>
         <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
       <script src="./js/main.js"></script>
       <script>
         var swiper = new Swiper(".mySwiper", {
-          effect: "coverflow",
-          grabCursor: true,
-          centeredSlides: true,
-          slidesPerView: "auto",
-          coverflowEffect: {
-            rotate: 50,
-            stretch: 0,
-            depth: 100,
-            modifier: 1,
-            slideShadows: true,
-          },
+          slidesPerView: 3,
+          spaceBetween: 30,
           pagination: {
             el: ".swiper-pagination",
+            clickable: true,
           },
         });
       </script>
