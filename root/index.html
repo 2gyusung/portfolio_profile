@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!-- Link Swiper's CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/all.min.css" />
     <title>이규성 프로필 :: 자기소개</title>
@@ -67,18 +69,22 @@
         <div class="experience__container">
           <div class="experience-details-container">
             <div class="subTitle__wrapper">
-              <i class="fa-solid fa-graduation-cap aboutTitle"></i>
-              <h2>Education</h2>
+              <span
+                ><i class="fa-solid fa-graduation-cap aboutTitle"></i
+                >Education</span
+              >
             </div>
             <div class="details__wrapper">
               <article>대덕대학교(2년제) 컴퓨터공학과 졸업</article>
-              <article>세잔직업전문학교 한번에 끝나는 프론트엔드 과정 2024-08-05 ~ 2025-02-25</article>
+              <article>
+                세잔직업전문학교 한번에 끝나는 프론트엔드 과정 2024-08-05 ~
+                2025-02-25
+              </article>
             </div>
           </div>
           <div class="experience-details-container">
             <div class="subTitle__wrapper">
-              <i class="fa-solid fa-layer-group"></i>
-              <h2>Tech Stack</h2>
+              <span><i class="fa-solid fa-layer-group"></i>Tech Stack</span>
             </div>
             <div class="details__wrapper tech__details__wrapper">
               <article>
@@ -102,33 +108,183 @@
               <article>
                 <div class="exp_title">
                   <h3>JavaScript</h3>
-                <p>Experienced</p>
-              </div>
+                  <p>Experienced</p>
+                </div>
               </article>
-            <article>
-              <div class="exp_title">
-                <h3>React</h3>
-                <p>Experienced</p>
-              </div>
-            </article>
-            <article>
-              <div class="exp_title">
-                <h3>Vue</h3>
-                <p>Experienced</p>
-              </div>
-            </article>
-            <article>
-              <div class="exp_title">
-                <h3>jQuery</h3>
-                <p>Basic</p>
-              </div>
-            </article>
+              <article>
+                <div class="exp_title">
+                  <h3>React</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <div class="exp_title">
+                  <h3>Vue</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <div class="exp_title">
+                  <h3>jQuery</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
             </div>
           </div>
         </div>
       </section>
-
+      <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="./img/img.jpg" />
+        <h1>테스트</h1>
+      </div>
+      <div class="swiper-slide">
+        <img src="./img/img.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="./img/img.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="./img/img.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="./img/img.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="./img/img.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="./img/img.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="./img/img.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="./img/img.jpg" />
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+        <!-- <div class="experience-details-container">
+          <div class="about-containers">
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img src="./img/img.jpg" alt="Project 1" class="project-img"/>
+              </div>
+              <h2 class="experience-sub-title project-title">Project One</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/'"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/'"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div> -->
+            <!-- <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                src="./img/img.jpg"
+                  alt="Project 2"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Project Two</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/'"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/'"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                src="./img/img.jpg"
+                  alt="Project 3"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Project Three</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/'"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/'"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+          </div>
+        </div> -->
+      </section>
+      <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+          <div class="contact-info-container">
+            <img
+              src="./assets/email.png"
+              alt="Email icon"
+              class="icon contact-icon email-icon"
+            />
+            <p><a href="mailto:examplemail@gmail.com">Example@gmail.com</a></p>
+          </div>
+          <div class="contact-info-container">
+            <img
+              src="./assets/linkedin.png"
+              alt="LinkedIn icon"
+              class="icon contact-icon"
+            />
+            <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+          </div>
+        </div>
+      </section>
+        <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
       <script src="./js/main.js"></script>
+      <script>
+        var swiper = new Swiper(".mySwiper", {
+          effect: "coverflow",
+          grabCursor: true,
+          centeredSlides: true,
+          slidesPerView: "auto",
+          coverflowEffect: {
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows: true,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+          },
+        });
+      </script>
     </div>
   </body>
 </html>

@@ -205,15 +205,15 @@ a:-webkit-any-link {
   align-items: center;
   padding: 50px 0;
 }
+
 .experience__title_wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 .subTitle__wrapper {
-  display: flex;
-  align-items: center;
-
+  text-align: center;
 }
 .subTitle__wrapper i {
   line-height: 65px;
@@ -227,7 +227,7 @@ a:-webkit-any-link {
 }
 
 .details__wrapper {
-  margin: 15px;
+  margin: 20px;
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -246,12 +246,86 @@ a:-webkit-any-link {
   flex-direction: row;
 }
 
-.exp_wrapper article {
+.tech__details__wrapper article {
   display: flex;
   justify-content: center;
-  padding: 15px;
-  gap: 10px;
-  text-align: center;
+  padding: 10px;
+  gap: 5px;
 }
 
 
+
+/* PROJECTS SECTION */
+
+#projects {
+  width: 100%;
+  height: 100vh;
+}
+.section__text__p1,
+.title {
+  text-align: center;
+}
+
+.details-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: center;
+  padding: 20px;
+  border-radius: 2rem;
+}
+.color-container {
+  border-color: rgb(163, 163, 163);
+  background: rgb(250, 250, 250);
+}
+
+.project-img {
+  border-radius: 2rem;
+  width: 70%;
+  height: 90%;
+}
+.article-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-title {
+  text-align: center;
+  margin: 1rem;
+  color: black;
+}
+
+.project-btn {
+  color: black;
+  border-color: rgb(163, 163, 163);
+}
+.btn-container button {
+  border: none;
+  padding: 15px;
+  border-radius: 2rem;
+}
+
+.about-containers {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+}
