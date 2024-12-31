@@ -313,8 +313,8 @@ a:-webkit-any-link {
 }
 
 .swiper {
-  width: 100%;
-  height: 100%;
+  width: 1200px;
+  height: 400px;
 }
 
 .swiper-slide {
@@ -329,7 +329,5 @@ a:-webkit-any-link {
 
 .swiper-slide img {
   display: block;
-  width: 100%;
-  height: 100%;
   object-fit: cover;
 }
