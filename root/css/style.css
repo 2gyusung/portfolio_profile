@@ -413,3 +413,136 @@ a:-webkit-any-link {
   font-size: 20px;
   line-height: 50px;
 }
+
+
+/* 공통 섹션 스타일 */
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh; /* 모든 섹션의 높이를 뷰포트와 동일하게 */
+  padding: 2rem; /* 내용이 너무 붙지 않도록 여백 추가 */
+  box-sizing: border-box;
+}
+
+/* 공통 타이틀 스타일 */
+section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+section p {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #555;
+}
+
+/* 반응형 레이아웃 */
+@media screen and (max-width: 1200px) {
+  section {
+    padding: 1.5rem;
+  }
+
+  section h1 {
+    font-size: 2rem;
+  }
+
+  section p {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  section {
+    padding: 1rem;
+  }
+
+  section h1 {
+    font-size: 1.8rem;
+  }
+
+  section p {
+    font-size: 0.85rem;
+  }
+}
+
+/* 프로필 섹션 */
+#contents .content__wrapper {
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile__img img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1.5rem;
+}
+
+.profile__intro {
+  text-align: center;
+}
+
+.info_btn button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  margin: 0.5rem;
+}
+
+/* About Me 섹션 */
+#aboutme__container .experience__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.details__wrapper {
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Projects 섹션 */
+#projects .swiper {
+  width: 90%;
+}
+
+#projects .swiper-slide {
+  height: auto;
+}
+
+.project__wrapper {
+  flex-direction: column;
+  align-items: center;
+}
+
+.project__img__wrapper img {
+  width: 100%;
+  max-width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+
+.project__btn__wrapper a {
+  margin: 0.5rem;
+  font-size: 0.9rem;
+}
+
+/* Contact 섹션 */
+#contact .contact_wrapper {
+  max-width: 600px;
+  padding: 2rem;
+  text-align: center;
+}
+
+.expProjects_wrapper span {
+  font-size: 1rem;
+}
