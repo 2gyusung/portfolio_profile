@@ -21,6 +21,7 @@ a:-webkit-any-link {
   text-decoration: none;
 }
 .container {
+  /* width: 1280px; */
   overflow: visible; /* 자식 요소가 항상 보이도록 설정 */
 }
 /* header */
@@ -497,4 +498,28 @@ section p {
 
 .expProjects_wrapper span {
   font-size: 1rem;
+}
+
+
+
+
+#square{
+  width: 50px;
+  height: 30px;
+  animation-name : lotate;
+  animation-duration : 3s;
+}
+
+@keyframes lotate {
+  0% {
+    transform : scale(0deg)
+  }
+
+  50% {
+    transform : scale(180deg)
+  }
+
+  100% {
+    transform : scale(360deg)
+  }
 }
