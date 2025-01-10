@@ -492,7 +492,7 @@ section p {
 /* Contact 섹션 */
 #contact .contact_wrapper {
   max-width: 600px;
-  padding: 2rem;
+  padding: 4rem;
   text-align: center;
 }
 
@@ -500,26 +500,31 @@ section p {
   font-size: 1rem;
 }
 
+/* 다크모드 */
 
-
-
-#square{
-  width: 50px;
-  height: 30px;
-  animation-name : lotate;
-  animation-duration : 3s;
+.day {
+  background-color: white;
+  color : black;
+  transition: .5s;
 }
 
-@keyframes lotate {
-  0% {
-    transform : scale(0deg)
-  }
+.night {
+  background-color: black;
+  color: white;
+  transition: .5s;
+}
 
-  50% {
-    transform : scale(180deg)
-  }
 
-  100% {
-    transform : scale(360deg)
-  }
+#change {
+  padding: 8px;
+  border: none;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  background: transparent;
+  transition: .5s;
+  border-radius: 50%;
+}
+#change:hover {
+  background: #000;
+  color: #fff;
+  border-radius: 50%;
 }
