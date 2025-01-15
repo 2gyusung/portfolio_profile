@@ -380,6 +380,8 @@ a:-webkit-any-link {
   color: #eee;
 }
 
+
+
 /* contact me */
 
 /* contact me */
@@ -458,8 +460,14 @@ section p {
 }
 
 @media screen and (max-width: 768px) {
+  .swiper-slide {
+    width: 100%;
+  }
+  .project__img__wrapper img {
+    width: 100%;
+  }
   section {
-    padding: 1rem;
+    padding: 1.5rem;
   }
 
   section h1 {

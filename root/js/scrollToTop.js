@@ -1,6 +1,5 @@
 let btn = document.querySelector('.img-btn')
 
-console.log(btn);
 
 window.addEventListener('scroll',()=>{
   if(window.scrollY> 1) {
