@@ -269,7 +269,7 @@ a:-webkit-any-link {
 
 #projects {
   width: 100%;
-  height: 100vh;
+  height: 100%;
 }
 .section__text__p1,
 .title {
@@ -280,7 +280,6 @@ a:-webkit-any-link {
   display: flex;
   flex-direction: column;
   align-items: center;
-  align-self: center;
   padding: 20px;
   border-radius: 2rem;
 }
@@ -323,14 +322,19 @@ a:-webkit-any-link {
   flex-wrap: wrap;
 }
 
-.swiper {
-  width: 70%;
+.project__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
   padding-top: 50px;
   padding-bottom: 50px;
   border-radius: 35px;
 }
-
-.swiper-slide {
+.project__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 300px;
   height: 500px;
   text-align: center;
@@ -340,11 +344,8 @@ a:-webkit-any-link {
   text-align: center;
   border-color: rgb(163, 163, 163);
   background: rgb(250, 250, 250);
-}
-.project__wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  margin: 2rem;
+  padding: 2rem;
 }
 .project__img__wrapper img {
   width: 300px;
@@ -460,9 +461,6 @@ section p {
 }
 
 @media screen and (max-width: 768px) {
-  .swiper-slide {
-    width: 100%;
-  }
   .project__img__wrapper img {
     width: 100%;
   }
@@ -508,19 +506,6 @@ section p {
   font-size: 1rem;
 }
 
-/* 다크모드 */
-
-.day {
-  background-color: white;
-  color : black;
-  transition: .5s;
-}
-
-.night {
-  background-color: black;
-  color: white;
-  transition: .5s;
-}
 
 
 #change {
