@@ -99,6 +99,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-position: center;
 }
 .about .about-container {
   display: flex;
@@ -108,9 +109,13 @@ section {
 }
 .about img {
   width: 30vw;
-  height: 50vh;
+  height: 30vw; /* 정사각형 유지 */
+  max-width: 400px; /* 크기 제한 */
+  max-height: 400px;
   border-radius: 50%;
+  display: block;
 }
+
 .info-box {
   display: flex;
   flex-direction: column;
@@ -227,11 +232,12 @@ section {
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 2fr));
   gap: 2rem;
 }
 
 .project-card {
+  width: 500px;
   padding: 3rem 2rem;
   display: flex;
   flex-direction: column;
@@ -372,7 +378,7 @@ footer ul li a {
     grid-template-columns: repeat(1,1fr);
   }
   .experience-info img {
-    width: 70vw;
+    width: 40vw;
   }
 }
 @media (max-width: 600px) {
@@ -421,5 +427,24 @@ footer ul li a {
   footer {
     gap: 1rem;
   }
+}
+
+/* scroll to top */
+.img-btn {
+  z-index: 500;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  width: 50px;
+  height: 50px;
+  display: none;
+  transition: 0.5s;
+}
+.show {
+  transition: 0.5;
+  display: block;
+}
+.show:hover {
+  scale: 1.5;
 }
 /* 4100 https://www.youtube.com/watch?v=NWZQkwXtHJo */
