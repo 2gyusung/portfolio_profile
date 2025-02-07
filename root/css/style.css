@@ -196,16 +196,48 @@ a:-webkit-any-link {
     display: block;
   }
 }
-
 /* about me */
-#aboutme__container {
-  width: 100%;
+#about__container {
+  width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
   height: 96vh;
   min-height: fit-content;
   margin-bottom: 10%;
+  outline: 1px solid black;
+}
+.aboutme__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
+.aboutme_imgWrpper img{
+  height: 400px;
+  width: 400px;
+  margin: auto 0;
+}
+
+.aboutme_content {
+  outline: 1px solid black;
+}
+.aboutme_content p {
+  color: rgb(85, 85, 85);
+  flex-wrap: wrap;
+  font-size: 18px;
+  text-align: left;
+  line-height: 1.5rem;
+}
+/* exp */
+#exp__container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 96vh;
+  min-height: fit-content;
+  margin-bottom: 10%
 }
 
 .experience__title_wrapper {
@@ -247,7 +279,6 @@ a:-webkit-any-link {
 .details__wrapper article {
   font-size: 15px;
   white-space: nowrap;
-
 }
 .tech__details__wrapper {
   display: flex;
@@ -260,11 +291,7 @@ a:-webkit-any-link {
   padding: 10px;
   gap: 5px;
 }
-.aboutme_content {
-  color: rgb(85, 85, 85);
-  flex-wrap: wrap;
-  padding: 30px;
-}
+
 @media screen and (max-width: 1200px) {
   #aboutme__container {
   }
@@ -389,8 +416,6 @@ a:-webkit-any-link {
 
 
 /* contact me */
-
-/* contact me */
 #contact {
   display: flex;
   justify-content: center;
@@ -422,7 +447,6 @@ a:-webkit-any-link {
   font-size: 20px;
   line-height: 50px;
 }
-
 
 /* 공통 섹션 스타일 */
 section {
@@ -482,7 +506,6 @@ section p {
   }
 }
 
-
 /* About Me 섹션 */
 #aboutme__container .experience__container {
   display: grid;
@@ -495,11 +518,18 @@ section p {
 .details__wrapper {
   padding: 2rem;
   text-align: center;
+  min-height: 20vh; 
 }
 
-
-
-
+/* .details__wrapper  */
+.edu {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.edu article {
+  font-size: 0.85rem;
+}
 /* Contact 섹션 */
 #contact .contact_wrapper {
   max-width: 600px;
@@ -511,14 +541,12 @@ section p {
   font-size: 1rem;
 }
 
-
-
 #change {
   padding: 8px;
   border: none;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   background: transparent;
-  transition: .5s;
+  transition: 0.5s;
   border-radius: 50%;
 }
 #change:hover {
@@ -536,13 +564,12 @@ section p {
   width: 50px;
   height: 50px;
   display: none;
-  transition: .5s;
+  transition: 0.5s;
 }
 .show {
-  transition: .5;
+  transition: 0.5;
   display: block;
-
 }
-.show:hover{
+.show:hover {
   scale: 1.5;
 }
