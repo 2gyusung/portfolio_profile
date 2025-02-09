@@ -19,8 +19,8 @@
 header {
   position: fixed;
   top: 1rem;
-  left: 50%;
-  transform: translateX(-50%);
+  /* left: 50%; */
+  /* transform: translateX(-50%); */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -378,7 +378,11 @@ footer ul li a {
     grid-template-columns: repeat(1,1fr);
   }
   .experience-info img {
-    width: 40vw;
+    width: 70vw;
+  }
+  .nav-links {
+    flex-direction: column;
+    text-align: center;
   }
 }
 @media (max-width: 600px) {
@@ -395,7 +399,6 @@ footer ul li a {
     display: flex;
     flex-direction: column;
     text-align: center;
-    align-items: center;
     background: rgba(0, 0, 0, 0.9);
     border-radius: 3rem;
     display: none;
