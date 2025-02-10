@@ -1,16 +1,14 @@
 @font-face {
-  font-family: "Pretendard-Regular";
-  src: url("https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
-    format("woff");
-  font-weight: 400;
+  font-family: 'NoonnuBasicGothicRegular';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noon-2410@1.0/NoonnuBasicGothicRegular.woff2') format('woff2');
+  font-weight: normal;
   font-style: normal;
 }
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Pretendard-Regular";
+  font-family: 'NoonnuBasicGothicRegular';
   text-decoration: none;
   scroll-behavior: smooth;
   list-style: none;
@@ -172,6 +170,7 @@ section {
   font-weight: 600;
   margin-bottom: 3rem;
 }
+/* experience */
 
 .experience-info {
   display: flex;
@@ -182,6 +181,12 @@ section {
 .experience-info img {
   width: 24vw;
   border-radius: 3rem;
+}
+.skills {
+  display: flex;
+  gap: 0.3rem;
+  margin-top: 1rem ;
+
 }
 .grid {
   display: grid;
@@ -198,6 +203,9 @@ section {
   justify-content: left;
   cursor: pointer;
   transition: 0.3s ease-in-out;
+}
+.grid-card article {
+  font-size: 1rem;
 }
 .grid-card:hover {
   transform: scale(1.02);
