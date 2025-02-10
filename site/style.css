@@ -19,8 +19,8 @@
 header {
   position: fixed;
   top: 1rem;
-  /* left: 50%; */
-  /* transform: translateX(-50%); */
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -99,7 +99,6 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-position: center;
 }
 .about .about-container {
   display: flex;
@@ -109,13 +108,9 @@ section {
 }
 .about img {
   width: 30vw;
-  height: 30vw; /* 정사각형 유지 */
-  max-width: 400px; /* 크기 제한 */
-  max-height: 400px;
+  height: 50vh;
   border-radius: 50%;
-  display: block;
 }
-
 .info-box {
   display: flex;
   flex-direction: column;
@@ -197,9 +192,10 @@ section {
   border: 2px solid black;
   border-radius: 3rem;
   padding: 3rem;
+  display: flex;
   flex-direction: column;
   align-items: baseline;
-  justify-content: last baseline;
+  justify-content: left;
   cursor: pointer;
   transition: 0.3s ease-in-out;
 }
@@ -232,12 +228,11 @@ section {
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 2fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
 }
 
 .project-card {
-  width: 500px;
   padding: 3rem 2rem;
   display: flex;
   flex-direction: column;
@@ -256,7 +251,7 @@ section {
   transform: translateY(-10px) scale(1.02);
 }
 .project-card img {
-  width: 30vw;
+  width: 15vw;
   border-radius: 1rem;
 }
 .project-card:hover .btn {
@@ -380,10 +375,6 @@ footer ul li a {
   .experience-info img {
     width: 70vw;
   }
-  .nav-links {
-    flex-direction: column;
-    text-align: center;
-  }
 }
 @media (max-width: 600px) {
   header #menu-icon {
@@ -422,33 +413,14 @@ footer ul li a {
   }
   .input-box input {
     padding: 0.5rem 3rem;
-    padding: 80%;
-    font-size: 1.5rem;
+    width: 80%;
+    font-size: 1.2rem;
   }
   .input input::placeholder {
-    font-size: 1.5rem;
+    font-size: 1.0rem;
   }
   footer {
     gap: 1rem;
   }
-}
-
-/* scroll to top */
-.img-btn {
-  z-index: 500;
-  position: fixed;
-  bottom: 50px;
-  right: 50px;
-  width: 50px;
-  height: 50px;
-  display: none;
-  transition: 0.5s;
-}
-.show {
-  transition: 0.5;
-  display: block;
-}
-.show:hover {
-  scale: 1.5;
 }
 /* 4100 https://www.youtube.com/watch?v=NWZQkwXtHJo */
