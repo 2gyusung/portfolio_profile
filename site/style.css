@@ -14,6 +14,7 @@
   list-style: none;
 }
 
+
 header {
   position: fixed;
   top: 1rem;
@@ -126,6 +127,15 @@ section {
   font-size: 4rem;
   font-weight: 600;
 }
+.self-intro {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+  border: 2px solid black;
+  padding: 3rem;
+  border-radius: 3rem;
+}
 .info-box span {
   background: linear-gradient(to right, rgba(255, 0, 255), rgba(0, 157, 255));
   background-clip: text;
@@ -233,6 +243,8 @@ section {
 ::-webkit-scrollbar-thumb {
   background: linear-gradient(to bottom, rgba(0, 157, 255), rgba(255, 0, 255));
 }
+
+/* projects */
 
 .projects-grid {
   display: grid;
