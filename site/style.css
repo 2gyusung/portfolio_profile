@@ -293,6 +293,10 @@ section {
   font-size: 2rem;
   font-weight: 500;
 }
+.project-card p {
+  font-size: 0.9rem;
+  font-weight: 200;
+}
 
 .input-box {
   display: flex;
