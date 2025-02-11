@@ -107,7 +107,8 @@ section {
 }
 .about img {
   width: 30vw;
-  height: 50vh;
+  height: auto;
+  background-position: center;
   border-radius: 50%;
 }
 .info-box {
