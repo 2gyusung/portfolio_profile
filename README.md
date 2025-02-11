@@ -7,7 +7,7 @@
 
 ### 포트폴리오 프로필 주소  📋
 ```
-https://2gyusung.github.io/portfolio_profile/root/
+https://2gyusung.github.io/portfolio_profile/site/
 ```  
    `기간 📆` : 2024 - 01 - 10 ~  2024 - 01 - 14
   
