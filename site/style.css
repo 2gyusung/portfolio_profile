@@ -108,7 +108,6 @@ section {
 .about img {
   background-position: center;
   border-radius: 50%;
-  backface-visibility: hidden;
 }
 .info-box {
   display: flex;
@@ -234,6 +233,8 @@ section {
   color: transparent;
 }
 
+
+/* scrollbar css design */
 ::-webkit-scrollbar {
   width: 20px;
 }
