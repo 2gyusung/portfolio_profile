@@ -106,10 +106,9 @@ section {
   gap: 10rem;
 }
 .about img {
-  width: 30vw;
-  height: auto;
   background-position: center;
   border-radius: 50%;
+  backface-visibility: hidden;
 }
 .info-box {
   display: flex;
