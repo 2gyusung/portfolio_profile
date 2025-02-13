@@ -197,12 +197,12 @@ section {
 
 .experience-info {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-end;
+  justify-content: flex-end;
   gap: 5rem;
 }
-.experience-info img {
-  width: 24vw;
+.img-card {
+  width: 30vw;
   border-radius: 3rem;
 }
 .skills {
@@ -304,7 +304,7 @@ section {
   font-size: 0.9rem;
   font-weight: 200;
 }
-.project-card .btn-group .btn:nth-child(2) {
+.project-card .btn-group .btn:nth-child(1) {
   /* Border */
   color: white;
   cursor: pointer;
@@ -318,6 +318,22 @@ section {
   background-image: linear-gradient(-225deg, #4CC3FF 0%, #7C64D5 48%, #FF057C 100%);
  }
 
+/*  img projects*/
+.container {
+  width: 1400px;
+  margin: 20px auto;
+  columns: 4;
+  column-gap: 40px;
+}
+.container .box {
+  width: 100%;
+  margin-bottom: 10px;
+  break-inside: avoid;
+}
+.container .box img {
+  max-width: 100%;
+  border-radius: 15px;
+}
 
 
 .input-box {
