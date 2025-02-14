@@ -314,7 +314,7 @@ section {
   border-color: white;
 
 }
- .btn-group .btn:nth-child(1):hover {
+.project-card .btn-group .btn:nth-child(1):hover {
   background-image: linear-gradient(-225deg, #4CC3FF 0%, #7C64D5 48%, #FF057C 100%);
  }
 
@@ -489,7 +489,8 @@ footer ul li a {
     font-size: 1.2rem;
   }
   .input input::placeholder {
-    font-size: 1rem;
+    font-size: 0.8rem;
+    text-align: center;
   }
 
   footer {
