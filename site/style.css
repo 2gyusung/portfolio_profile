@@ -537,6 +537,10 @@ footer ul li a {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
+.modal .modal_popup img {
+  width: 100%;
+}
+
 /* 닫기 버튼 스타일 */
 .modal .modal_popup .close_btn {
   display: block;
@@ -559,6 +563,9 @@ footer ul li a {
     padding: 15px;
     object-fit: cover;
   }
+  .modal .modal_popup img {
+    width: 100%;
+  }
 }
 
 /* 반응형 (모바일) */
@@ -568,5 +575,8 @@ footer ul li a {
     max-width: 95vw;
     padding: 10px;
      object-fit: cover;
+  }
+  .modal .modal_popup img {
+    width: 100%;
   }
 }
