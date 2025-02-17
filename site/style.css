@@ -242,7 +242,6 @@ section {
   margin-bottom: 1rem;
 }
 .grid-card span {
-  margin-top: 0.5rem;
   font-size: 1.5rem;
   font-weight: 500;
   background: linear-gradient(to right, rgba(0, 157, 255), rgba(255, 0, 255));
