@@ -9,23 +9,6 @@ menuIcon.onclick = ()=> {
 
 
 
-// document.addEventListener("DOMContentLoaded", function () {
-//   // 모든 프로젝트 카드 요소를 가져옴
-//   const projectCards = document.querySelectorAll(".project-card");
-
-//   // 각 프로젝트 카드에 클릭 이벤트 추가
-//   projectCards.forEach((card) => {
-//       card.addEventListener("click", function () {
-//           const title = card.querySelector("h3").textContent;
-//           const description = card.querySelector("p").textContent;
-//           const imgEl = card.querySelector('img').textContent;
-//           console.log(imgEl);
-          
-//           alert(`프로젝트: ${title}\n\n${description} ${imgEl}`);
-//           modal.classList.add('on');
-//       });
-//   });
-// });
 
 // 모든 모달과 버튼을 선택
 const modalButtons = document.querySelectorAll('.modal_btn');
