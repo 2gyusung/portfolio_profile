@@ -134,6 +134,9 @@ section {
   align-items: center;
 }
 
+.img-card {
+  width: 20vw;
+}
 .section-container {
   display: flex;
   flex-direction: column;
@@ -180,11 +183,10 @@ section {
   font-weight: 500;
   text-wrap: nowrap;
   transition: 0.2s ease-in-out;
-}
-.btn {
   text-decoration: none;
   color: black;
 }
+
 .btn:hover {
   background-color: black;
   color: white;
@@ -214,15 +216,12 @@ section {
 .experience-info {
   display: flex;
   align-items: center;
-  gap: 5rem;
+  gap: 3rem;
 }
 .ghchart {
   width: 30rem;
 }
-.img-card {
-  width: 30vw;
-  border-radius: 3rem;
-}
+
 .skills {
   display: flex;
   gap: 0.3rem;
