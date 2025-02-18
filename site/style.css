@@ -128,21 +128,36 @@ section {
 }
 
 /* about */
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* 중앙 정렬 */
+  justify-content: center; /* 중앙 정렬 */
+}
+
+.section-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10rem;
+}
+
+.section-container img {
+  width: 15rem;
+}
+
 .self-intro {
   display: flex;
   flex-direction: column;
-  width: 70%;
-  margin: 0 auto;
-  border: 3px solid transparent;
-  background: 
-    linear-gradient(to right, white, white), 
-    linear-gradient(to right, rgba(255, 0, 255) , rgba(0, 157, 255)); 
-  background-clip: padding-box, border-box;
-  background-origin: padding-box, border-box;
   padding: 3rem;
   border-radius: 3rem;
-  line-height: 25px;
-  /* border: 2px solid black; */
+  line-height: 1.6;
 }
 
 .info-box span {
@@ -198,9 +213,11 @@ section {
 
 .experience-info {
   display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;
+  align-items: center;
   gap: 5rem;
+}
+.ghchart {
+  width: 30rem;
 }
 .img-card {
   width: 30vw;
@@ -262,7 +279,6 @@ section {
 
 /* projects */
 
-
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -314,13 +330,22 @@ section {
   cursor: pointer;
   text-wrap: nowrap;
   transition: 0.3s ease-in-out;
-  background-image: linear-gradient(-225deg, #FF057C 0%, #7C64D5 48%, #4CC3FF 100%);
+  background-image: linear-gradient(
+    -225deg,
+    #ff057c 0%,
+    #7c64d5 48%,
+    #4cc3ff 100%
+  );
   border-color: white;
-
 }
 .project-card .btn-group .btn:nth-child(1):hover {
-  background-image: linear-gradient(-225deg, #4CC3FF 0%, #7C64D5 48%, #FF057C 100%);
- }
+  background-image: linear-gradient(
+    -225deg,
+    #4cc3ff 0%,
+    #7c64d5 48%,
+    #ff057c 100%
+  );
+}
 
 /*  img projects*/
 .container {
@@ -338,7 +363,6 @@ section {
   max-width: 100%;
   border-radius: 15px;
 }
-
 
 .input-box {
   display: flex;
@@ -416,6 +440,9 @@ footer ul li a {
   .input-box i {
     font-size: 2.5rem;
   }
+  .section-wrapper img {
+    display: none;
+  }
 }
 @media (max-width: 768px) {
   header {
@@ -450,6 +477,9 @@ footer ul li a {
   }
   .experience-info img {
     width: 70vw;
+  }
+  .section-wrapper img {
+    display: none;
   }
 }
 @media (max-width: 600px) {
@@ -500,6 +530,9 @@ footer ul li a {
   footer {
     gap: 1rem;
   }
+  .section-wrapper img {
+    display: none;
+  }
 }
 
 .modal_btn {
@@ -507,8 +540,6 @@ footer ul li a {
   cursor: pointer;
   transition: box-shadow 0.2s;
 }
-
-
 
 /* 모달 배경 */
 .modal {
@@ -575,7 +606,7 @@ footer ul li a {
     width: 90%;
     max-width: 95vw;
     padding: 10px;
-     object-fit: cover;
+    object-fit: cover;
   }
   .modal .modal_popup img {
     width: 100%;
