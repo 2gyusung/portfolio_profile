@@ -149,9 +149,13 @@ section {
   align-items: center;
   gap: 10rem;
 }
+.card-img-wrapper {
+  display: flex;
+  justify-content: center;
+}
 
 .section-container img {
-  width: 15rem;
+  width: 20rem;
 }
 
 .self-intro {
