@@ -437,7 +437,7 @@ footer ul li a {
     gap: 3rem;
   }
   .experience-info {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
   .input-box input {
     padding: 2rem 5rem;
