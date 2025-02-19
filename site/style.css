@@ -258,8 +258,8 @@ section {
 }
 .grid-card:hover {
   transform: scale(1.02);
-  background-color: black;
-  color: white;
+  background-color: #efefef;
+  color: black;
 }
 .grid-card i {
   font-size: 1.5rem;
@@ -306,8 +306,8 @@ section {
   transition: 0.3s ease-in-out;
 }
 .project-card:hover {
-  background-color: black;
-  color: white;
+  background-color: #efefef;
+  color: black;
   transform: translateY(-10px) scale(1.02);
 }
 .project-card img {
@@ -316,7 +316,8 @@ section {
 }
 .project-card:hover .btn {
   border: 2px solid white;
-  color: white;
+  background-color: #efefef;
+  color: black;
 }
 .project-card:hover .btn:hover {
   border: 2px solid white;
