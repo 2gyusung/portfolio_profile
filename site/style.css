@@ -161,9 +161,12 @@ section {
 .self-intro {
   display: flex;
   flex-direction: column;
-  padding: 2rem;
-  border-radius: 3rem;
+  padding: 5rem;
   line-height: 1.6;
+  font-size: 24px;
+  background: -webkit-linear-gradient( #bbb,#333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .info-box span {
@@ -219,20 +222,19 @@ section {
 /* experience */
 
 .experience-info {
+  width: 100%;
   display: flex;
   align-items: center;
+  justify-content: flex-end;
   gap: 0.5rem;
   margin-top: 5.5rem;
 }
-.ghchart {
-  width: 23rem;
-  margin: 5rem;
-}
+
 
 .skills {
   display: flex;
   gap: 0.3rem;
-  margin-top: 1rem;
+  margin-top: 0.8rem;
 }
 .grid {
   display: grid;
@@ -304,6 +306,7 @@ section {
   border-radius: 3rem;
   cursor: pointer;
   transition: 0.3s ease-in-out;
+
 }
 .project-card:hover {
   background-color: #efefef;
@@ -327,10 +330,11 @@ section {
 .project-card h3 {
   font-size: 2rem;
   font-weight: 500;
+  text-wrap: nowrap;
 }
 .project-card p {
   font-size: 0.9rem;
-  font-weight: 200;
+  font-weight: 500;
 }
 .project-card .btn-group .btn:nth-child(1) {
   /* Border */
@@ -450,7 +454,7 @@ footer ul li a {
   .input-box i {
     font-size: 2.5rem;
   }
-  .section-wrapper img {
+  .experience-info img {
     display: none;
   }
 }
