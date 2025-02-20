@@ -521,8 +521,8 @@ footer ul li a {
 :is(.about p) {
   margin: 2rem;
   font-size: 0.2rem;
-  font-weight: 800;
-  font-size: clamp(1rem, 0.75vw + 1rem, 1.25rem);
+  font-weight: 200;
+  font-size: clamp(0.15rem, 0.25vw + 0.25rem, 0.25rem);
 }
 
 :is(.about p:nth-of-type(2)) {
@@ -641,6 +641,7 @@ footer ul li a {
   .experience-info img {
     width: 70vw;
   }
+  
 
 }
 @media (max-width: 600px) {
