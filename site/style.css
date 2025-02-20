@@ -14,6 +14,9 @@
   scroll-behavior: smooth;
   list-style: none;
 }
+body {
+  overflow-x: hidden;
+}
 
 header {
   position: fixed;
@@ -142,9 +145,8 @@ section {
 }
 
 .section-wrapper {
-  display: flex;
-  align-items: center;
-  gap: 10rem;
+ text-align: center;
+  margin: 5rem;
 }
 .card-img-wrapper {
   display: flex;
@@ -158,9 +160,11 @@ section {
 .self-intro {
   display: flex;
   flex-direction: column;
-  padding: 5rem;
+  align-items: center;
+  white-space: nowrap;
+  padding: 2rem;
   line-height: 1.6;
-  font-size: 24px;
+  font-size: 12px;
   /* background: -webkit-linear-gradient( #bbb,#333);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; */
@@ -515,9 +519,9 @@ footer ul li a {
 /* Scroll Driven Gradient  */
 
 :is(.about p) {
-  margin: 0;
-  font-size: 1rem;
-  font-weight: 400;
+  margin: 2rem;
+  font-size: 0.2rem;
+  font-weight: 800;
   font-size: clamp(1rem, 0.75vw + 1rem, 1.25rem);
 }
 
@@ -576,6 +580,7 @@ footer ul li a {
 }
 
 @media (max-width: 1440px) {
+  /* .about 수정하기 */
 }
 @media (max-width: 1280px) {
   header {
@@ -636,9 +641,7 @@ footer ul li a {
   .experience-info img {
     width: 70vw;
   }
-  .section-wrapper img {
-    display: none;
-  }
+
 }
 @media (max-width: 600px) {
   header #menu-icon {
