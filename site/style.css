@@ -187,18 +187,18 @@ section {
 
 @media (max-width: 768px) {
   #about .big_txt {
-    width: 100%;
+    max-width: 100%;
     padding-left: 20px;
-    font-size: 1rem;
+    font-size: 16px;
     text-align: left;
   }
 }
 
 @media (max-width: 480px) {
   #about .big_txt {
-    width: 100%;
+    max-width: 100%;
     padding-left: 10px;
-    font-size: 1rem;
+    font-size: 16px;
     text-align: left;
   }
 }
