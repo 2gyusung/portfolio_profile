@@ -157,18 +157,12 @@ section {
   width: 20rem;
 }
 
-.self-intro {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  white-space: nowrap;
-  padding: 2rem;
+.self-intro p {
   line-height: 1.6;
   font-size: 12px;
-  /* background: -webkit-linear-gradient( #bbb,#333);
+  background: -webkit-linear-gradient( #bbb,#333);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; */
-  /* text-wrap: nowrap; */
+  -webkit-text-fill-color: transparent;
 }
 
 .info-box span {
@@ -516,68 +510,8 @@ footer ul li a {
   }
 }
 
-/* Scroll Driven Gradient  */
 
-:is(.about p) {
-  margin: 2rem;
-  font-size: 0.2rem;
-  font-weight: 200;
-  font-size: clamp(0.15rem, 0.25vw + 0.25rem, 0.25rem);
-}
 
-:is(.about p:nth-of-type(2)) {
-  opacity: 0;
-  animation: fade-in both linear;
-  animation-timeline: scroll(root);
-  animation-range: 75vh 90vh;
-}
-
-:is(.about p:nth-of-type(3)) {
-  opacity: 0;
-  animation: fade-in both linear;
-  animation-timeline: scroll(root);
-  animation-range: 80vh 90vh;
-}
-
-.about p:nth-of-type(2) {
-  --opacity: 0.65;
-}
-
-@keyframes fade-in {
-  to {
-    opacity: var(--opacity, 1);
-  }
-}
-
-.about p:nth-of-type(1) {
-  font-size: clamp(1rem, 3vw + 1rem, 2rem);
-  font-weight: 600;
-  background: radial-gradient(
-    50% 100% at 50% 100%,
-    hsl(var(--accent, 10) 90% 95%),
-    rgba(255, 0, 255),
-    rgba(0, 157, 255),
-    transparent 50%
-  );
-  background-size: 400% 600%;
-  -webkit-background-clip: text;
-  background-position: 100% 0;
-  color: transparent;
-  opacity: 0;
-  animation: move-bg both linear, fade-in both linear;
-  animation-timeline: scroll(root);
-  animation-range: 0 100vh, 40vh 100vh;
-}
-
-@keyframes move-bg {
-  to {
-    background-position: 50% 100%;
-  }
-}
-
-.about p:first-of-type {
-  transition: all 0.2s;
-}
 
 @media (max-width: 1440px) {
   /* .about 수정하기 */
