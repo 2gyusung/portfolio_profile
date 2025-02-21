@@ -199,7 +199,8 @@ section {
     font-size: 1.3rem;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+    text-wrap: wrap;
   }
   .b_txt {
     width: 100%;
@@ -213,9 +214,7 @@ section {
     padding-left: 20px;
     font-size: 16px;
     font-weight: bold;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    text-align: left;
   }
   .b_txt {
     width: 100%;
